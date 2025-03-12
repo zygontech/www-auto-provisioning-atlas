@@ -1,0 +1,1295 @@
+[
+  {
+    "Name": "15Five",
+    "Domain": "15five.com",
+    "Google OIDC": "TRUE",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "1Password",
+    "Domain": "1password.com",
+    "Google OIDC": "FALSE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "UPGRADE",
+    "JIT": "FALSE",
+    "SCIM Provisioning": "UPGRADE",
+    "SCIM Deprovisioning": "UPGRADE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://support.1password.com/sso/",
+      "https://blog.1password.com/1password-scim-bridge-explained/"
+    ]
+  },
+  {
+    "Name": "Adjust",
+    "Domain": "adjust.com",
+    "Google OIDC": "FALSE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "FALSE",
+    "SCIM Deprovisioning": "FALSE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://help.adjust.com/en/article/sso",
+      "https://help.adjust.com/en/article/google"
+    ]
+  },
+  {
+    "Name": "Adobe",
+    "Domain": "adobe.com",
+    "Google OIDC": "TRUE",
+    "Microsoft OIDC": "TRUE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "UPGRADE",
+    "SCIM Deprovisioning": "FALSE",
+    "Public Provisioning API": "UPGRADE",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788",
+      "https://helpx.adobe.com/enterprise/using/setup-sso-google.html",
+      "https://adobe-apiplatform.github.io/umapi-documentation/en/"
+    ]
+  },
+  {
+    "Name": "Adyen",
+    "Domain": "adyen.com",
+    "Google OIDC": "FALSE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "TRUE",
+    "JIT": "TRUE",
+    "SCIM Provisioning": "FALSE",
+    "SCIM Deprovisioning": "FALSE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://docs.adyen.com/account/single-sign-on/set-up-sso/"
+    ]
+  },
+  {
+    "Name": "Amazon Web Services (AWS)",
+    "Domain": "aws.amazon.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Amplitude",
+    "Domain": "amplitude.com",
+    "Google OIDC": "TRUE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "UPGRADE",
+    "SCIM Deprovisioning": "UPGRADE",
+    "Public Provisioning API": "UPGRADE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://amplitude.com/docs/admin/single-sign-on/sso",
+      "https://amplitude.com/docs/admin/account-management/scim-provision",
+      "https://amplitude.com/docs/apis/analytics/scim"
+    ]
+  },
+  {
+    "Name": "Asana",
+    "Domain": "asana.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Ashby",
+    "Domain": "ashbyhq.com",
+    "Google OIDC": "TRUE",
+    "Microsoft OIDC": "TRUE",
+    "SAML": "TRUE",
+    "JIT": "TRUE",
+    "SCIM Provisioning": "FALSE",
+    "SCIM Deprovisioning": "FALSE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://www.ashbyhq.com"
+    ]
+  },
+  {
+    "Name": "Atlassian",
+    "Domain": "atlassian.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Bonusly",
+    "Domain": "bonus.ly",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Boomi",
+    "Domain": "boomi.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Box",
+    "Domain": "box.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Canva",
+    "Domain": "canva.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Carta",
+    "Domain": "carta.com",
+    "Google OIDC": "FALSE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "FALSE",
+    "SCIM Deprovisioning": "FALSE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://www.carta.com"
+    ]
+  },
+  {
+    "Name": "Checkout",
+    "Domain": "checkout.com",
+    "Google OIDC": "FALSE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "FALSE",
+    "SCIM Deprovisioning": "FALSE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://www.checkout.com/docs/business-operations/use-the-dashboard/single-sign-on"
+    ]
+  },
+  {
+    "Name": "Cloudflare",
+    "Domain": "cloudflare.com",
+    "Google OIDC": "TRUE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "UPGRADE",
+    "SCIM Deprovisioning": "UPGRADE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://developers.cloudflare.com/fundamentals/setup/account/account-security/scim-setup/",
+      "https://community.cloudflare.com/t/scim-for-google-workspaces-not-supported/772581"
+    ]
+  },
+  {
+    "Name": "Comeet",
+    "Domain": "comeet.co",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "CustomerIO",
+    "Domain": "customer.io",
+    "Google OIDC": "TRUE",
+    "Microsoft OIDC": "TRUE",
+    "SAML": "TRUE",
+    "JIT": "TRUE",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://docs.customer.io/accounts-and-workspaces/login-with-sso/"
+    ]
+  },
+  {
+    "Name": "Datadog",
+    "Domain": "datadoghq.com",
+    "Google OIDC": "TRUE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "TRUE",
+    "JIT": "TRUE",
+    "SCIM Provisioning": "UPGRADE",
+    "SCIM Deprovisioning": "UPGRADE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://docs.datadoghq.com/account_management/saml/"
+    ]
+  },
+  {
+    "Name": "Deskpro",
+    "Domain": "deskpro.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Dialpad",
+    "Domain": "dialpad.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Docusign",
+    "Domain": "docusign.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Dropbox",
+    "Domain": "dropbox.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Emburse",
+    "Domain": "emburse.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Evernote",
+    "Domain": "evernote.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Expo",
+    "Domain": "expo.dev",
+    "Google OIDC": "UPGRADE",
+    "Microsoft OIDC": "UPGRADE",
+    "SAML": "FALSE",
+    "JIT": "FALSE",
+    "SCIM Provisioning": "FALSE",
+    "SCIM Deprovisioning": "FALSE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://docs.expo.dev/accounts/sso/",
+      "https://github.com/expo/fyi/blob/main/sso-setup-google-ws.md"
+    ]
+  },
+  {
+    "Name": "Figma",
+    "Domain": "figma.com",
+    "Google OIDC": "TRUE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "UPGRADE",
+    "SCIM Deprovisioning": "UPGRADE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://help.figma.com/hc/en-us/articles/360039957374",
+      "https://support.google.com/a/topic/10018788",
+      "https://help.figma.com/hc/en-us/articles/360040532333-Guide-to-SAML-SSO",
+      "https://help.figma.com/hc/en-us/articles/360040047614-Authenticate-with-Google"
+    ]
+  },
+  {
+    "Name": "Foodee",
+    "Domain": "foodee.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Freshdesk",
+    "Domain": "freshdesk.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Front",
+    "Domain": "frontapp.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Fuze",
+    "Domain": "fuze.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "GitHub",
+    "Domain": "github.com",
+    "Google OIDC": "FALSE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "UPGRADE",
+    "SCIM Deprovisioning": "UPGRADE",
+    "Public Provisioning API": "UPGRADE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://docs.github.com/en/enterprise-cloud"
+    ]
+  },
+  {
+    "Name": "Google Cloud Platform",
+    "Domain": "cloud.google.com",
+    "Google OIDC": "TRUE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "TRUE",
+    "JIT": "TRUE",
+    "SCIM Provisioning": "UNKNOWN",
+    "SCIM Deprovisioning": "UNKNOWN",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://cloud.google.com/identity-platform/docs/web/saml"
+    ]
+  },
+  {
+    "Name": "GoToMeeting",
+    "Domain": "gotomeeting.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "HackerOne",
+    "Domain": "hackerone.com",
+    "Google OIDC": "FALSE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "TRUE",
+    "JIT": "TRUE",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "TRUE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://docs.hackerone.com/en/articles/9010541-scim-provisioning-for-hackerone"
+    ]
+  },
+  {
+    "Name": "Honey",
+    "Domain": "honey.is",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Hootsuite",
+    "Domain": "hootsuite.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "HubSpot",
+    "Domain": "hubspot.com",
+    "Google OIDC": "TRUE",
+    "Microsoft OIDC": "TRUE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "UPGRADE",
+    "SCIM Deprovisioning": "FALSE",
+    "Public Provisioning API": "UPGRADE",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://knowledge.hubspot.com/account/set-up-single-sign-on-sso",
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Huddle",
+    "Domain": "huddle.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Intercom",
+    "Domain": "intercom.com",
+    "Google OIDC": "TRUE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "UPGRADE",
+    "SCIM Deprovisioning": "FALSE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://www.intercom.com/help/en/articles/3974587-integrate-with-an-identity-provider-and-log-in-with-saml-sso"
+    ]
+  },
+  {
+    "Name": "Keeper",
+    "Domain": "keepersecurity.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Klipfolio",
+    "Domain": "klipfolio.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Kudos",
+    "Domain": "kudos.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Linear",
+    "Domain": "linear.app",
+    "Google OIDC": "FALSE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "UPGRADE",
+    "JIT": "FALSE",
+    "SCIM Provisioning": "UPGRADE",
+    "SCIM Deprovisioning": "UPGRADE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://linear.app/docs/scim"
+    ]
+  },
+  {
+    "Name": "Lucca",
+    "Domain": "lucca.fr",
+    "Google OIDC": "FALSE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "TRUE",
+    "JIT": "TRUE",
+    "SCIM Provisioning": "FALSE",
+    "SCIM Deprovisioning": "FALSE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://support.lucca.fr/hc/en-us/articles/360023273411-Logging-In-Using-SSO"
+    ]
+  },
+  {
+    "Name": "Lucidchart",
+    "Domain": "lucidchart.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "LumApps",
+    "Domain": "lumapps.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Metabase",
+    "Domain": "metabase.com",
+    "Google OIDC": "TRUE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "FALSE",
+    "SCIM Deprovisioning": "FALSE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://www.metabase.com"
+    ]
+  },
+  {
+    "Name": "Microsoft Office 365",
+    "Domain": "office.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Miro",
+    "Domain": "miro.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Monday",
+    "Domain": "monday.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Netskope",
+    "Domain": "netskope.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Notion",
+    "Domain": "notion.so",
+    "Google OIDC": "TRUE",
+    "Microsoft OIDC": "TRUE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "UPGRADE",
+    "SCIM Deprovisioning": "UPGRADE",
+    "Public Provisioning API": "UPGRADE",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://www.notion.so/help/provision-users-and-groups-with-scim",
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "OfficeSpace",
+    "Domain": "officespacesoftware.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Onfido",
+    "Domain": "onfido.com",
+    "Google OIDC": "FALSE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "TRUE",
+    "JIT": "FALSE",
+    "SCIM Provisioning": "FALSE",
+    "SCIM Deprovisioning": "FALSE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://public.support.onfido.com/s/article/Dasboard-Setting-up-Single-Sign-On-SSO"
+    ]
+  },
+  {
+    "Name": "OpenAI",
+    "Domain": "openai.com",
+    "Google OIDC": "TRUE",
+    "Microsoft OIDC": "TRUE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "UPGRADE",
+    "SCIM Deprovisioning": "UPGRADE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://help.openai.com/en/articles/9627404-openai-chatgpt-scim-integration-faq"
+    ]
+  },
+  {
+    "Name": "PagerDuty",
+    "Domain": "pagerduty.com",
+    "Google OIDC": "FALSE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "FALSE",
+    "SCIM Deprovisioning": "FALSE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://support.pagerduty.com/main/docs/sso"
+    ]
+  },
+  {
+    "Name": "PandaDoc",
+    "Domain": "pandadoc.com",
+    "Google OIDC": "TRUE",
+    "Microsoft OIDC": "TRUE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "UPGRADE",
+    "SCIM Deprovisioning": "UPGRADE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://support.pandadoc.com/en/articles/9715050-sso-implementation"
+    ]
+  },
+  {
+    "Name": "PayFit",
+    "Domain": "payfit.com",
+    "Google OIDC": "TRUE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "FALSE",
+    "JIT": "FALSE",
+    "SCIM Provisioning": "FALSE",
+    "SCIM Deprovisioning": "FALSE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://developers.payfit.io/"
+    ]
+  },
+  {
+    "Name": "Phrase",
+    "Domain": "phrase.com",
+    "Google OIDC": "TRUE",
+    "Microsoft OIDC": "TRUE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "UPGRADE",
+    "SCIM Deprovisioning": "UPGRADE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://support.phrase.com/hc/en-us/articles/5784117127580-Phrase-Identity-Management",
+      "https://support.phrase.com/hc/en-us/articles/5793349215900-Phrase-User-Management"
+    ]
+  },
+  {
+    "Name": "Proxyclick",
+    "Domain": "proxyclick.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Purchasely",
+    "Domain": "purchasely.com",
+    "Google OIDC": "FALSE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "FALSE",
+    "JIT": "FALSE",
+    "SCIM Provisioning": "FALSE",
+    "SCIM Deprovisioning": "FALSE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://purchasely.com"
+    ]
+  },
+  {
+    "Name": "RECOG",
+    "Domain": "recog.net",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Retool",
+    "Domain": "retool.com",
+    "Google OIDC": "TRUE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "UPGRADE",
+    "SCIM Deprovisioning": "UPGRADE",
+    "Public Provisioning API": "UPGRADE",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://docs.retool.com/reference/api/scim/"
+    ]
+  },
+  {
+    "Name": "RevenueCat",
+    "Domain": "revenuecat.com",
+    "Google OIDC": "FALSE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "UPGRADE",
+    "SCIM Deprovisioning": "FALSE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://www.revenuecat.com"
+    ]
+  },
+  {
+    "Name": "RingCentral Office",
+    "Domain": "ringcentral.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Rollbar",
+    "Domain": "rollbar.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Salesforce",
+    "Domain": "salesforce.com",
+    "Google OIDC": "FALSE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "UPGRADE",
+    "SCIM Deprovisioning": "UPGRADE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "SAP Cloud Platform Identity Authentication",
+    "Domain": "sap.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "ScreenSteps",
+    "Domain": "screensteps.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Segment",
+    "Domain": "segment.com",
+    "Google OIDC": "TRUE",
+    "Microsoft OIDC": "TRUE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "UPGRADE",
+    "SCIM Deprovisioning": "UPGRADE",
+    "Public Provisioning API": "UPGRADE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://segment.com/docs/segment-app/iam/scim/",
+      "https://segment.com/docs/segment-app/iam/sso/"
+    ]
+  },
+  {
+    "Name": "Sentry",
+    "Domain": "sentry.io",
+    "Google OIDC": "TRUE",
+    "Microsoft OIDC": "TRUE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "UPGRADE",
+    "SCIM Deprovisioning": "UPGRADE",
+    "Public Provisioning API": "UPGRADE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://docs.sentry.io/api/scim/",
+      "https://docs.sentry.io/organization/authentication/sso/"
+    ]
+  },
+  {
+    "Name": "Slack",
+    "Domain": "slack.com",
+    "Google OIDC": "TRUE",
+    "Microsoft OIDC": "TRUE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "UPGRADE",
+    "SCIM Deprovisioning": "FALSE",
+    "Public Provisioning API": "UPGRADE",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://slack.com/help/articles/115004071768-Using-Single-Sign-On-(SSO)-with-Slack",
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Smartsheet",
+    "Domain": "smartsheet.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "SpaceIQ",
+    "Domain": "spaceiq.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Spoke",
+    "Domain": "askspoke.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Stripe",
+    "Domain": "stripe.com",
+    "Google OIDC": "FALSE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "TRUE",
+    "JIT": "TRUE",
+    "SCIM Provisioning": "FALSE",
+    "SCIM Deprovisioning": "FALSE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "FALSE",
+    "Sources": [
+      "https://docs.stripe.com/get-started/account/sso"
+    ]
+  },
+  {
+    "Name": "Sugar",
+    "Domain": "sugarcrm.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "ThousandEyes",
+    "Domain": "thousandeyes.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Trello",
+    "Domain": "trello.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Vercel",
+    "Domain": "vercel.com",
+    "Google OIDC": "FALSE",
+    "Microsoft OIDC": "FALSE",
+    "SAML": "UPGRADE",
+    "JIT": "UPGRADE",
+    "SCIM Provisioning": "UPGRADE",
+    "SCIM Deprovisioning": "FALSE",
+    "Public Provisioning API": "FALSE",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://vercel.com/docs/directory-sync",
+      "https://vercel.com/docs/saml"
+    ]
+  },
+  {
+    "Name": "Workplace from Facebook",
+    "Domain": "workplace.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Zendesk",
+    "Domain": "zendesk.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  },
+  {
+    "Name": "Zscaler",
+    "Domain": "zscaler.com",
+    "Google OIDC": "UNKNOWN",
+    "Microsoft OIDC": "UNKNOWN",
+    "SAML": "TRUE",
+    "JIT": "UNKNOWN",
+    "SCIM Provisioning": "TRUE",
+    "SCIM Deprovisioning": "TRUE",
+    "Public Provisioning API": "UNKNOWN",
+    "Compatible Google SCIM": "TRUE",
+    "Sources": [
+      "https://support.google.com/a/topic/10018788"
+    ]
+  }
+]

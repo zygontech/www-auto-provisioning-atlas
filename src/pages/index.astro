@@ -1,0 +1,46 @@
+---
+const apps = await import("../data/apps.json").then((m) => m.default);
+---
+
+<head>
+  <title>App Directory</title>
+</head>
+
+<h1>Search for an App</h1>
+<input
+  id='search'
+  type='text'
+  placeholder='Search by name...'
+  oninput='filterApps()'
+/>
+
+<ul id='app-list'>
+  {
+    apps.map((app: any) => (
+      <li>
+        <a href={`/apps/${app.Name.toLowerCase().replace(/\s+/g, "-")}`}>
+          {app.Name}
+        </a>
+      </li>
+    ))
+  }
+</ul>
+
+<script>
+  function filterApps() {
+    let searchInput = document.getElementById("search");
+    if (!searchInput) return;
+
+    let searchValue = (searchInput as HTMLInputElement).value.toLowerCase();
+    let items = document.querySelectorAll("#app-list li");
+
+    items.forEach((item) => {
+      let listItem = item as HTMLElement; // Type assertion to HTMLElement
+      listItem.style.display = listItem.innerText
+        .toLowerCase()
+        .includes(searchValue)
+        ? "block"
+        : "none";
+    });
+  }
+</script>

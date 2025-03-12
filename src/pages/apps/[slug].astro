@@ -1,0 +1,44 @@
+---
+// Load apps data
+const apps = await import("../../data/apps.json");
+
+const { slug } = Astro.params;
+const app = apps.default.find(
+  (a: any) => a.Name.toLowerCase().replace(/\s+/g, "-") === slug
+);
+
+if (!app) {
+  throw new Error("App not found");
+}
+---
+
+<head>
+  <title>{app.Name} - App Info</title>
+</head>
+
+<h1>{app.Name}</h1>
+<p><strong>Domain:</strong> {app.Domain}</p>
+<p><strong>Google OIDC:</strong> {app["Google OIDC"]}</p>
+<p><strong>Microsoft OIDC:</strong> {app["Microsoft OIDC"]}</p>
+<p><strong>SAML:</strong> {app.SAML}</p>
+<p><strong>JIT:</strong> {app.JIT}</p>
+<p><strong>SCIM Provisioning:</strong> {app["SCIM Provisioning"]}</p>
+<p><strong>SCIM Deprovisioning:</strong> {app["SCIM Deprovisioning"]}</p>
+<p>
+  <strong>Public Provisioning API:</strong>
+  {app["Public Provisioning API"]}
+</p>
+<p><strong>Compatible Google SCIM:</strong> {app["Compatible Google SCIM"]}</p>
+
+<h2>Sources</h2>
+<ul>
+  {
+    app.Sources.map((source: any) => (
+      <li>
+        <a href={source} target='_blank'>
+          {source}
+        </a>
+      </li>
+    ))
+  }
+</ul>
