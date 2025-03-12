@@ -7,7 +7,7 @@ import react from "@astrojs/react";
 export default defineConfig({
   integrations: [react()],
   output: "static",
-  base: "/www-apps-provisioning-encyclopedia/",
+  base: "/",
   vite: {
     build: {
       outDir: "dist",

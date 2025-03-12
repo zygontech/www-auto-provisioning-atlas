@@ -1,15 +1,17 @@
 ---
-// Load apps data
-const apps = await import("../../data/apps.json");
+import apps from "../../data/apps.json";
 
-const { slug } = Astro.params;
-const app = apps.default.find(
-  (a: any) => a.Name.toLowerCase().replace(/\s+/g, "-") === slug
-);
+// Generate dynamic routes
+export async function getStaticPaths() {
+  const paths = apps.map((app) => ({
+    params: { slug: app.Name.toLowerCase().replace(/\s+/g, "-") },
+    props: { app },
+  }));
 
-if (!app) {
-  throw new Error("App not found");
+  return paths;
 }
+
+const { app } = Astro.props;
 ---
 
 <head>
@@ -33,7 +35,7 @@ if (!app) {
 <h2>Sources</h2>
 <ul>
   {
-    app.Sources.map((source: any) => (
+    app.Sources.map((source) => (
       <li>
         <a href={source} target='_blank'>
           {source}
