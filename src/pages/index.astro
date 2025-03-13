@@ -1,46 +1,187 @@
 ---
+import Layout from "../layouts/Layout.astro";
+import { marked } from "marked";
+
 const apps = await import("../data/apps.json").then((m) => m.default);
+// Load README.md content
+const readmeFiles = import.meta.glob("../data/readme.md", {
+  query: "?raw",
+  import: "default",
+});
+const readmePath = Object.keys(readmeFiles)[0];
+const readmeContent = await readmeFiles[readmePath]();
+const readmeHTML = marked(readmeContent as string);
 ---
 
-<head>
-  <title>App Directory</title>
-</head>
+<Layout
+  title='The Auto Provisioning Atlas - Your Guide to SaaS & IdP Integration'
+  description='The Auto-Provisioning Atlas is a comprehensive database of authentication and provisioning methods for SaaS and cloud apps. Quickly check if your apps support SCIM, SSO, JIT provisioning, and deprovisioning. Simplify IT onboarding and offboarding with accurate, up-to-date insights.'
+>
+  <div class='page-container'>
+    <div class='header'>
+      <img
+        src='/the_auto_provisioning_atlas_icon.png'
+        alt='Auto Provisioning Atlas logo'
+        width='100'
+      />
+      <!-- Icon credits  -->
+      <h1>The Auto Provisioning Atlas</h1>
+    </div>
+    <div class='search-container'>
+      <input
+        id='search'
+        type='text'
+        placeholder='Search for an app...'
+        autocomplete='off'
+        oninput='filterApps()'
+        onkeydown='navigateResults(event)'
+      />
+      <ul id='search-results' class='hidden'></ul>
+    </div>
+    <div class='description'>
+      <p>
+        The Auto-Provisioning Atlas aims to be a comprehensive database of <br
+        />
+        authentication and provisioning methods for SaaS apps. <br /> &nbsp;<br
+        /> Quickly check if your apps support SCIM, SSO, JIT provisioning, and deprovisioning.
+      </p>
+    </div>
+  </div>
+  <h1>About the project</h1>
+  <section class='readme'>
+    <div class='readme-content' set:html={readmeHTML} />
+  </section>
+  <script src='/search.js' defer></script>
 
-<h1>Search for an App</h1>
-<input
-  id='search'
-  type='text'
-  placeholder='Search by name...'
-  oninput='filterApps()'
-/>
+  <style>
+    h1 {
+      margin-top: 2rem;
+      color: #18191d;
+      text-align: center;
+    }
+    h3 {
+      margin-top: 0rem;
+      color: #484d59;
+      font-weight: 500;
+    }
+    .page-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    .header {
+      display: flex;
+      padding-top: 2rem;
+      max-width: 800px;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .description p {
+      margin-top: 1rem;
+      text-align: center;
+      color: #484d59;
+    }
 
-<ul id='app-list'>
-  {
-    apps.map((app: any) => (
-      <li>
-        <a href={`/apps/${app.Name.toLowerCase().replace(/\s+/g, "-")}`}>
-          {app.Name}
-        </a>
-      </li>
-    ))
-  }
-</ul>
+    .search-container {
+      position: relative;
+      width: 100%;
+      max-width: 600px;
+      margin: 1rem auto;
+    }
 
-<script>
-  function filterApps() {
-    let searchInput = document.getElementById("search");
-    if (!searchInput) return;
+    input {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
 
-    let searchValue = (searchInput as HTMLInputElement).value.toLowerCase();
-    let items = document.querySelectorAll("#app-list li");
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      width: 100%;
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      max-height: 300px;
+      overflow-y: auto;
+      z-index: 10;
+    }
 
-    items.forEach((item) => {
-      let listItem = item as HTMLElement; // Type assertion to HTMLElement
-      listItem.style.display = listItem.innerText
-        .toLowerCase()
-        .includes(searchValue)
-        ? "block"
-        : "none";
-    });
-  }
-</script>
+    .hidden {
+      display: none;
+    }
+
+    /* ✅ Make sure styles apply to dynamically inserted elements */
+    :global(.search-item) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* Aligns arrow to the right */
+      padding: 0.75rem;
+      cursor: pointer;
+      border-bottom: 1px solid #eee;
+      transition: background 0.2s;
+      position: relative;
+    }
+
+    :global(.search-item:last-child) {
+      border-bottom: none;
+    }
+
+    :global(.search-item:hover),
+    :global(.search-item.selected) {
+      background: #f7f7f7;
+    }
+
+    :global(.search-item img) {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    :global(.app-info) {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    :global(.app-info strong) {
+      font-size: 1rem;
+    }
+
+    :global(.app-info span) {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    /* ✅ Add the right arrow icon */
+    :global(.search-arrow) {
+      opacity: 0; /* Initially hidden */
+      font-size: 0.8rem;
+      color: #666;
+      margin-right: 12px;
+      transition:
+        opacity 0.2s ease-in-out,
+        transform 0.2s ease-in-out;
+    }
+
+    :global(.search-item:hover .search-arrow) {
+      opacity: 1; /* Show on hover */
+      transform: translateX(5px); /* Subtle movement effect */
+    }
+
+    .readme {
+      max-width: 800px;
+      margin: 2rem auto;
+    }
+  </style>
+</Layout>
