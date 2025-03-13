@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "node src/scripts/fetchReadme.js && astro dev",
-    "build": "node src/scripts/fetchReadme.jse && node src/scripts/fetchYamlData.js && astro build",
+    "build": "node src/scripts/fetchReadme.js && node src/scripts/fetchYamlData.js && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "deploy": "npm run build && gh-pages -d dist"
