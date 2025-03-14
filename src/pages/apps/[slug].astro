@@ -1,5 +1,6 @@
 ---
 import apps from "../../../public/data/apps.json";
+import SearchBar from "../../components/SearchBar.astro";
 import Layout from "../../layouts/Layout.astro";
 
 // Generate dynamic routes
@@ -13,40 +14,251 @@ export async function getStaticPaths() {
 }
 
 const { app } = Astro.props;
+
+// Function to add color-coded labels
+const getLabelClass = (value: unknown) => {
+  if (typeof value !== "string") return "";
+  switch (value.toUpperCase()) {
+    case "TRUE":
+      return "true-label";
+    case "FALSE":
+      return "false-label";
+    case "UPGRADE":
+      return "upgrade-label";
+    default:
+      return "unknown-label"; // Catch any unknown values
+  }
+};
+
+// Feature explanations
+const featureExplanations = {
+  "Google OIDC": "OpenID Connect (OIDC) authentication via Google.",
+  "Microsoft OIDC":
+    "OpenID Connect (OIDC) authentication via Microsoft Azure AD.",
+  SAML: "Security Assertion Markup Language (SAML) is a single sign-on (SSO) protocol used for authentication.",
+  JIT: "Just-In-Time (JIT) provisioning automatically creates user accounts upon first login.",
+  "SCIM Provisioning":
+    "System for Cross-domain Identity Management (SCIM) allows automated user provisioning.",
+  "SCIM Deprovisioning":
+    "SCIM also enables automatic deprovisioning when a user is removed.",
+  "Public Provisioning API":
+    "Indicates whether a public API is available for provisioning users.",
+  "Compatible Google SCIM":
+    "Shows if the app supports Google's SCIM implementation (https://support.google.com/a/topic/10018788)",
+};
 ---
 
 <Layout
   title=`${app.Name} - How to do automatic provisioning on ${app.Name}`
   description=`Learn how to automate provisioning and deprovisioning for ${app.Name}. Discover support for SCIM, SSO, JIT, and API-based user management. Check compatibility, requirements, and best practices for seamless onboarding and offboarding.`
 >
-  <img src=`https://logo.clearbit.com/${app.Domain}` alt=`${app.Name} logo` />
-  <h1>{app.Name}</h1>
-  <p><strong>Domain:</strong> {app.Domain}</p>
-  <p><strong>Google OIDC:</strong> {app["Google OIDC"]}</p>
-  <p><strong>Microsoft OIDC:</strong> {app["Microsoft OIDC"]}</p>
-  <p><strong>SAML:</strong> {app.SAML}</p>
-  <p><strong>JIT:</strong> {app.JIT}</p>
-  <p><strong>SCIM Provisioning:</strong> {app["SCIM Provisioning"]}</p>
-  <p><strong>SCIM Deprovisioning:</strong> {app["SCIM Deprovisioning"]}</p>
-  <p>
-    <strong>Public Provisioning API:</strong>
-    {app["Public Provisioning API"]}
-  </p>
-  <p>
-    <strong>Compatible Google SCIM:</strong>
-    {app["Compatible Google SCIM"]}
-  </p>
+  <div class='paper-container'>
+    <div class='app-header'>
+      <div class='app-logo-container'>
+        <img
+          src={`https://logo.clearbit.com/${app.Domain}`}
+          alt={`${app.Name} logo`}
+        />
+      </div>
+      <div class='app-name'>
+        <h1>{app.Name}</h1>
+        <span class='app-domain'>
+          <a href=`https://${app.Domain}` target='_blank'>{app.Domain}</a>
+        </span>
+      </div>
+    </div>
 
-  <h2>Sources</h2>
-  <ul>
-    {
-      app.Sources.map((source) => (
-        <li>
-          <a href={source} target='_blank'>
-            {source}
-          </a>
-        </li>
-      ))
-    }
-  </ul>
+    <table class='app-table'>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Support</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          Object.entries(featureExplanations).map(([feature, explanation]) => (
+            <tr>
+              <td class='feature-cell'>
+                <div>
+                  {feature}{" "}
+                  <button
+                    class='accordion-btn'
+                    onclick='toggleAccordion(event)'
+                  >
+                    ℹ️
+                  </button>
+                </div>
+                <div class='accordion-content'>{explanation}</div>
+              </td>
+              <td class={getLabelClass(app[feature as keyof typeof app])}>
+                {app[feature as keyof typeof app]}
+              </td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+    <h2>Sources</h2>
+    <ul class='sources-list'>
+      {
+        app.Sources.map((source) => (
+          <li>
+            <a href={source} target='_blank'>
+              {source}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+  <div class='search-section'>
+    <h2>Search for another app</h2>
+    <SearchBar />
+  </div>
 </Layout>
+<script src='/js/toggleAccordion.js' defer></script>
+<style>
+  .app-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  .app-name {
+    flex-direction: column;
+    align-items: center;
+
+    text-align: left;
+    margin-left: 2rem;
+    min-width: 200px;
+  }
+  .app-name h1 {
+    margin: 0 0 0.5rem;
+    color: #18191d;
+  }
+  .app-domain {
+    font-size: 1.1rem;
+    color: #666;
+  }
+
+  .app-logo-container {
+    border-radius: 8px;
+    border: 1px solid rgba(230, 233, 240, 0);
+    box-shadow: 0px 4px 0px 0px #edeefe;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 0.5rem;
+  }
+
+  .app-logo-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .app-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 0;
+    margin-top: 1rem;
+  }
+
+  .app-table th,
+  .app-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+  }
+
+  .app-table th {
+    background: #c0c4cc;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .true-label {
+    background: #28a745;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .false-label {
+    background: #dc3545;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .upgrade-label {
+    background: #ffc107;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .unknown-label {
+    background: #6c757d;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .sources-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+
+  .sources-list li {
+    margin-bottom: 0.5rem;
+  }
+
+  .sources-list a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  .sources-list a:hover {
+    text-decoration: underline;
+  }
+  .accordion-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+
+  :global(.feature-cell) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  :global(.accordion-content) {
+    margin-top: 0.5rem;
+    max-height: 0; /* Start collapsed */
+    overflow: hidden;
+    transition:
+      max-height 0.3s ease-in-out,
+      opacity 0.3s ease-in-out;
+    opacity: 0;
+    max-width: 300px;
+    font-size: 0.8rem;
+    color: #82889a;
+  }
+  :global(.accordion-content.open) {
+    max-height: 100px; /* Adjust based on content */
+    opacity: 1;
+  }
+  .search-section {
+    margin: 6rem auto;
+    text-align: center;
+  }
+</style>

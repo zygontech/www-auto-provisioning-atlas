@@ -2,6 +2,7 @@
 import SearchBar from "../components/SearchBar.astro";
 import Layout from "../layouts/Layout.astro";
 import { marked } from "marked";
+import apps from "../../public/data/apps.json";
 
 // Load README.md content
 const readmeFiles = import.meta.glob("../data/readme.md", {
@@ -11,6 +12,21 @@ const readmeFiles = import.meta.glob("../data/readme.md", {
 const readmePath = Object.keys(readmeFiles)[0];
 const readmeContent = await readmeFiles[readmePath]();
 const readmeHTML = marked(readmeContent as string);
+
+// Load popular apps
+const popularAppsSelection = [
+  "Slack",
+  "Notion",
+  "Github",
+  "1Password",
+  "Dropbox",
+];
+const popularApps = popularAppsSelection
+  .map((appName) => {
+    const app = apps.find((app) => app.Name === appName);
+    return app;
+  })
+  .filter(Boolean);
 ---
 
 <Layout
@@ -37,11 +53,46 @@ const readmeHTML = marked(readmeContent as string);
       </p>
     </div>
   </div>
-  <h1>About the project</h1>
-  <section class='readme'>
-    <div class='readme-content' set:html={readmeHTML} />
-  </section>
+  <div class='popular-apps'>
+    <h3>Browse popular apps</h3>
 
+    <div class='app-list'>
+      {
+        popularApps.map((app) => (
+          <div>
+            <a
+              href={`/apps/${app!.Name.toLowerCase().replace(/\s+/g, "-")}`}
+              class='app-item'
+            >
+              <img
+                src={`https://logo.clearbit.com/${app!.Domain}`}
+                alt={`${app!.Name} logo`}
+              />
+              <span>{app!.Name}</span>
+            </a>
+          </div>
+        ))
+      }
+    </div>
+    <p>
+      <a
+        href='https://github.com/zygontech/auto-provisioning-atlas/issues/new'
+        target='_blank'>Missing an app?</a
+      >
+    </p>
+  </div>
+  <h1>About the project</h1>
+  <div class='paper-container'>
+    <p>
+      <a
+        href='https://github.com/zygontech/auto-provisioning-atlas'
+        target='_blank'>github.com/zygontech/auto-provisioning-atlas</a
+      >
+    </p>
+    <section class='readme'>
+      <div class='readme-content' set:html={readmeHTML} />
+    </section>
+  </div>
   <style>
     h1 {
       margin-top: 2rem;
@@ -77,6 +128,42 @@ const readmeHTML = marked(readmeContent as string);
     .readme {
       max-width: 800px;
       margin: 2rem auto;
+      text-align: left;
+    }
+    .popular-apps {
+      text-align: center;
+      margin: 2rem 0 5rem 0;
+    }
+
+    .app-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .app-item {
+      display: flex;
+      align-items: center;
+      padding: 0.75rem 1rem;
+      background: #fafafd;
+      border-radius: 8px;
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      transition: background 0.2s ease-in-out;
+    }
+
+    .app-item:hover {
+      background: #e0e0e0;
+    }
+
+    .app-item img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin-right: 10px;
     }
   </style>
 </Layout>
