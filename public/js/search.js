@@ -1,7 +1,7 @@
 let apps = [];
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const response = await fetch("/src/data/apps.json");
+  const response = await fetch("/data/apps.json");
   apps = await response.json();
 
   let searchResults = document.getElementById("search-results");

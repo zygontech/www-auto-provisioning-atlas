@@ -6,7 +6,7 @@ import fetch from "node-fetch";
 const GITHUB_REPO = "zygontech/apps-provisioning-encyclopedia";
 const GITHUB_FOLDER = "_apps";
 const GITHUB_API_URL = `https://api.github.com/repos/${GITHUB_REPO}/contents/${GITHUB_FOLDER}`;
-const OUTPUT_FILE = path.resolve("src/data/apps.json");
+const OUTPUT_FILE = path.resolve("/data/apps.json");
 
 // Ensure the data directory exists
 const DATA_DIR = path.resolve("src/data");
