@@ -32,7 +32,9 @@ document.addEventListener("DOMContentLoaded", async () => {
       let li = document.createElement("li");
       li.classList.add("search-item");
       li.innerHTML = `
-        <img src="https://logo.clearbit.com/${app.Domain}" alt="${app.Name} logo" />
+        <div class="search-logo-container">
+          <img src="https://logo.clearbit.com/${app.Domain}" alt="${app.Name} logo" />
+        </div>
         <div class="app-info">
           <strong>${app.Name}</strong>
           <span>${app.Domain}</span>
